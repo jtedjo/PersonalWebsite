@@ -23,7 +23,10 @@
     height: 200px;
     background-color: gold;
 }
-
+.content{
+	margin-left: 161px;
+	top: 201px;
+}
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -32,7 +35,7 @@
 }
 .body {
   position: absolute;
-  left = 160px; 
+  left = 200px; 
   top = 201px;
   right = 0; 
   bottom 0;

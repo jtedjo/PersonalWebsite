@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" type="text/css" href="../main.css">
+
+
+<head><title> Jonathan Tedjo's UCI Website </title>
+<meta charset ="UTF-8">
+<meta name = "viewport" content="Width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../main.css">
+
+<link rel="stylesheet" href="../jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="../jquery-jvectormap-2.0.3.min.js"></script>
+<script src="../jquery-jvectormap-world-mill.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="../Pictures/Primary.jpg" alt="Jonathan Tedjo in suit" style ="max-height: 100%" align ="left"/>
+      </div>
+      <div class="column">
+        <h3 align ="center"> Jonathan Tedjo's <br> University of California, Irvine Website</h3>
+      </div>
+      <div class="column">
+         <img src="../Pictures/scotty.jpg" alt="Riverside Scotty" style="max-height: 100%" align ="right" />
+      </div>        
+    </div>
+  </div>
+  <div class="sidebar">
+	<a href="../index.html">Home</a>
+    <a href="#">Biography</a>
+    <a href="#">Projects</a>
+    <a href="#">Resume</a>
+  </div>
+  
+  <!-- the "middle" part between the header and sidebar" -->
+  <div class="content">
+	<H1 style="text-align: center"> Places I've Visited </H1>
+	<div id="world-map" style="margin: auto; width: 50%; height: 400px"></div>
+  <script>
+    $(function(){
+      $('#world-map').vectorMap({
+		map: 'world_mill',
+		normalizeFunction: 'polynomial',
+		hoverOpacity: 0.7,
+		hoverColor: false,
+		markerStyle: {
+			initial: {
+				fill: '#F8E23B',
+				stroke: '#383f47'
+			}
+		},
+		markers:[
+			{latLng: [-6.17, 106.86], name: 'Jakarta, birth-place!', style:{fill: 'rgba(0,0,255)'}},
+			{latLng: [34.10, -117.65], name: 'Upland, Hometown'},
+			{latLng: [33.96, -117.34], name: 'UC Riverside', style:{fill: 'rgba(255,0,0)'}},
+			{latLng: [33.64, -117.84], name: 'UC Irvine', style:{fill: 'rgba(255,0,0)'}},
+			{latLng: [38.89, -77.02], name: 'Smithsonian Museum of Natural History, D.C.', style:{fill: 'rgba(255,0,0)'}},
+			{latLng: [34.10, -117.65], name: 'Upland, Hometown'},
+			{latLng: [1.35, 103.82], name: 'Singapore'},
+			{latLng: [40.71, -74.00], name: 'NYC'},
+			{latLng: [32.80, -96.82], name: 'Dallas, Texas'},
+			{latLng: [29.71, -95.37], name: 'Houston, Texas'},
+			{latLng: [30.60, -96.35], name: 'Texas A&M'},
+			{latLng: [38.53, -121.76], name: 'UC Davis'},
+			{latLng: [39.95, -75.17], name: 'Philadelphia'},
+			{latLng: [42.36, -71.06], name: 'Boston'},
+			{latLng: [28.37, -81.55], name: 'Walt Disney World, EPCOT!', style:{fill: 'rgba(255,0,0)'}},
+			{latLng: [29.95, -90.07], name: 'New Orleans'},
+			{latLng: [36.16, -115.14], name: 'Las Vegas'},
+			{latLng: [37.77, -122.42], name: 'San Francisco'},
+			{latLng: [33.45, -112.07], name: 'Phoenix'},
+			{latLng: [40.76, -111.91], name: 'Salt Lake City'},
+			{latLng: [37.70, -112.84], name: 'Brian Head, Utah'}
+		]
+	  
+	  });
+    });
+  </script>
+  </div>
+</body>
+
+
+</html>
