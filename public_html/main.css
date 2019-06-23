@@ -1,0 +1,39 @@
+
+
+/*obtained from w3schools*/
+.sidebar{
+   height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 200px; /* Stay at the top */
+    left: 0;
+    background-color:#0363F5; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+.sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+
+}
+.column {
+    float: left;
+    width: 33.33%;
+    height: 200px;
+    background-color: gold;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.body {
+  position: absolute;
+  left = 160px; 
+  top = 201px;
+  right = 0; 
+  bottom 0;
+}
