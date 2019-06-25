@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+
+<link rel="stylesheet" type="text/css" href="../main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+<head><title> Meet Jonathan Tedjo</title>
+<meta charset ="UTF-8">
+<meta name = "viewport" content="Width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="content">
+    <div class="row">
+      <div class="column" align = "center">
+        <img src="../Pictures/Primary.jpg" alt="professional shot" style="width:auto; height:auto; max-width:200px;max-height:200px;"/>
+      </div>
+      <div class="column" >
+        <h3 align ="center"> Jonathan Tedjo's <br> University of California, Irvine Website</h3>
+      </div>
+      <div class="column">
+         <img src="../Pictures/scotty.jpg" alt="Riverside Scotty" align ="center" style="width:auto; height:auto; max-width:200px;max-height:200px;" />
+      </div>        
+    </div>
+  </div>
+  <div class="sidebar">
+    <a href="Biography.html">Home<br /></a>
+    <a href="#">Projects<br /></a>
+    <a href="Resume.html">Resume<br /></a>
+  </div>
+  <div class="content">
+	<div class="row">
+		<div class="col-md-6" align="center" style="text-align:left;">
+			<H1> Process Resource Simulator</H1> 
+			<H4> Keywords: Process, Resource management, C++ </H4>
+			<p> This is a program written for Linux/Unix formatted text files that simulates Process and Resource Management. The program takes into account three different states, ready, running and blocked.
+
+			The process have different operations such as create, request, release, and destroy. This aspect is simulated by a text file input. There are 4 resources, having {{1},{2},{3},{4}} resources. When process request resources, it checks whether or not the resource is available, if not then it will become blocked.
+
+			The process also have a priority assigned, and there is only a single process active (a single core machine). The process also have a "parent" process and potentially a "child" process, with the topmost being the "init".
+
+			Destroying a process also destroys its children and releases resources. The process will be unblocked based on FIFO order of a queue of the particular resource they are blocked on. </p>
+			
+		</div>
+	</div>
+  	<div class="row">
+		<div class="col-md-6" align="center" style="text-align:left;">
+			<H1> Search Engine Tokenizer</H1> 
+			<H4> Keywords: Python, TF-IDF, NLTK, MySQL, Tokenizer, regex </H4>
+			<p> A class project where given the contents of a web crawler( i.e. hundreds of HTML files). In our case we were given 37,500 documents with 164,874 unique tokens totalling 471,000 kb of index.  
+			<p>we converted the page contents into tokens which is then put into a MySQL database for processing. In specific, we used the Python NLTK lib for tokenizing, and the MySQL connector to populate the database. We then use MySQL statements to determine the TF-IDF scores for every term/document pair. </p>
+			<p> The user can search for particular keyword and the program will give the first 100 pages based on ranking of the TF-IDF. </p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6" align="center" style="text-align:left;">
+			<H1> Health Fitness Tracker</H1> 
+			<H4> 2nd place at MiraCosta College Programming Competition.</H4>
+			<H4> Keywords: Java, fitness, nutrition, biochemistry, GUI </H4>
+			<p> Health Fitness Tracker(HFT) is the culmination of my interest in fitness/biology as well as technology. The program is written in Java. The program takes in users information such as their height, weight, age, gender, and fitness level to give diet recommendation, calculate BMI, as well as track caloric expenditure. </p>
+			<p> This program involved researching through various scientific papers on biochemistry and nutritions to implement the correct formulas for individualized diet. The program will determine based on your personal information the protein/fat/ and carbohydrate break down you should consume. The program has an interactive GUI, logging functionality, and login capabilities so more than one user can use the program. </p>
+			
+		</div>
+		<div class="col-md-6"><img src="../Pictures/HFT_1.jpg" alt="HealthFitnessTracker" style="width:auto; height:auto; max-width:600px;max-height:600px;"  /></div>
+	</div>
+  </div>
+</body>
+<div class="content">
+  <div class="container" style="background-color:rgb(0,62,120);">
+  <footer style="color:white;"
+	<div class="row">
+	<div class="col-sm-6">
+		<p><strong>Jonathan Tedjo</strong></p>
+		<p>Email: <a href="jon.tedjo@gmail.com">jon.tedjo@gmail.com</a>.</p>
+		<p>Phone Number: 909-230-0322</p>
+	</div>
+	<div class="col-sm-6 text-right">
+		<a href="https://www.linkedin.com/in/jonathan-tedjo-8ab49773/">
+			<i class='fab fa-linkedin' style='font-size:30px'></i>
+			</i>
+		</a>
+		<a href="https://github.com/jtedjo">
+			<i class='fab fa-github' style='font-size:30px'></i>
+			</i>
+		</a>
+	</div>
+  </div>
+</footer>
+
+  </div>
+
+</html>
