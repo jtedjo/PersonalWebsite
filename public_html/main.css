@@ -3,25 +3,27 @@
 /*obtained from w3schools*/
 .sidebar{
    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
+    width: 12%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 200px; /* Stay at the top */
+    top: 0; /* Stay at the top */
     left: 0;
-    background-color:#0363F5; 
+    background-color:rgb(253, 185,19);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
 }
 .sidebar a {
     text-decoration: none;
+	line-height: 50px;
     font-size: 25px;
 
 }
 .column {
     float: left;
     width: 33.33%;
-    height: 200px;
-    background-color: gold;
+    height: 160px;
+    background-color: rgb(0, 62,120);
+	color: white;
 }
 .content{
 	margin-left: 161px;
@@ -39,4 +41,8 @@
   top = 201px;
   right = 0; 
   bottom 0;
+}
+img{
+	max-width: 50%;
+	height: auto;
 }
